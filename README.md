@@ -1,6 +1,7 @@
 # Launch_TurtleBot_Navigation_Simulation
 Launched TurtleBot3 simulation in Gazebo, SLAM, and navigation using ROS Noetic.
 
+I followed the instructions via this link (just copy and paste):[turtlebot3.](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
 ## Step 0: Install ROS on Remote PC.
  ```
@@ -78,7 +79,7 @@ $ rosrun map_server map_saver -f ~/map
  ```
 To control, copy and paste this command: 
  ```
-roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ``` 
 ![image](https://github.com/user-attachments/assets/31b21854-8bb0-44eb-aacd-26a9b198bb08)
 
@@ -88,7 +89,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ### 3. Navigation 
 **Note: launch the TurtleBot3 navigation with the saved map.**
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='/home/vasmaa/map.yaml'
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='/home/vasmaa/map.yaml'
  ```
 ![image](https://github.com/user-attachments/assets/34ed0745-3ef8-497f-bc36-25a5af6f69e7)
 
